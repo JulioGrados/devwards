@@ -36,6 +36,9 @@ ul, li {
 .wrap {
 	flex-wrap: wrap;
 }
+.center {
+	justify-content: center;
+}
 /* utils */
 .container {
 	max-width: 1200px;
@@ -257,6 +260,92 @@ ul, li {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 600;
+	text-align: center;
+}
+
+.site__detail--main {
+	padding: 80px 0 60px 0;
+}
+
+.site__detail--main__left {
+	width: 50%;
+	margin-right: 40px;
+}
+
+.site__detail--main__rigth {
+	width: 50%;
+	margin-left: 40px;
+}
+
+.site__detail--main__left-description {
+	line-height: 2.5;
+}
+
+.site__detail--main__rigth-vote {
+	padding: 30px 0 30px 0;
+	border-bottom: 1px solid #979797;
+}
+
+.site__detail--images {
+	padding: 0 0 30px 0;
+}
+
+.site__detail--images__figure {
+	width: 100%;
+	max-width: 100%;
+	height: 50%;	
+	margin-bottom: 40px;
+}
+
+.site__detail--authors {
+	padding-bottom: 60px;
+}
+
+.site__detail--author {
+	width: 30%;
+}
+
+.site__detail--author__figure {
+	margin: 0;
+	padding: 0;
+	width: 30%;
+}
+
+.site__detail--author__figure img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;	
+}
+
+.site__detail--author__name {
+	width: 70%;
+	margin-left: 15px;
+}
+
+.site__detail--author__name h4 {
+	margin: 0 0 15px 0;
+}
+
+.site__detail--author__name span {
+	margin: 0;
+	display: block;
+	color: #3CC47C;
+}
+
+.site__detail--author__description {
+	line-height: 2;
+}
+
+.site__button {
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	width: 250px;
+	margin: 0 auto;
+	background-color: #3CC47C;
+	text-decoration: none;
+	display: block;
+	padding: 10px 0;
 	text-align: center;
 }
 
