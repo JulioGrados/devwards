@@ -85,6 +85,11 @@ ul, li {
 	position: relative;
 }
 
+.head-login {
+	height: 60px;
+	position: relative;	
+}
+
 .head__one {
 	height: 40px;
 	width: 100%;
@@ -128,6 +133,12 @@ ul, li {
 	font-weight: 500;
 	padding: 1.3rem .75rem;
 	background-color: #3CC47C;
+}
+
+.head__two__item-a--user {
+	color: #3CC47C;
+	font-weight: 600;
+	font-size: 18px;
 }
 
 .head__one__item-a--bold {
