@@ -72,6 +72,17 @@ ul, li {
 	background-color: #E1E3E4;
 }
 
+.site__square {
+	width: 20px;
+	height: 20px;
+	background-color: #FF0055;
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+	display: block;
+	cursor: pointer;
+}
+
 .border__bottom-gray {
 	border-bottom: 1px solid #979797;
 }
