@@ -41,22 +41,89 @@
 					<p class="site__detail--main__left-description">The experience transports users into a 3D environment where those taking part will make a series of choices based on a set of cryptic prompts, eventually discovering their Patronus.</p>
 				</div>
 				<div class="site__detail--main__rigth row column">
-					<div class="site__detail--main__rigth-vote row column center">
+					<div id="js-desing" class="site__detail--main__rigth-vote row column center">
 						<span>Realizar voto:</span>
 						<h3>1.- Diseño</h3>
 						<div class="row around">
-							<span class="site__square">1</span>
-							<span class="site__square">2</span>
-							<span class="site__square">3</span>
-							<span class="site__square">4</span>
-							<span class="site__square">5</span>
-							<span class="site__square">6</span>
-							<span class="site__square">7</span>
-							<span class="site__square">8</span>
-							<span class="site__square">9</span>
-							<span class="site__square">10</span>
+							<span onclick="votoDiseño(this);" data-valor="1" class="site__square">1</span>
+							<span onclick="votoDiseño(this);" data-valor="2" class="site__square">2</span>
+							<span onclick="votoDiseño(this);" data-valor="3" class="site__square">3</span>
+							<span onclick="votoDiseño(this);" data-valor="4" class="site__square">4</span>
+							<span onclick="votoDiseño(this);" data-valor="5" class="site__square">5</span>
+							<span onclick="votoDiseño(this);" data-valor="6" class="site__square">6</span>
+							<span onclick="votoDiseño(this);" data-valor="7" class="site__square">7</span>
+							<span onclick="votoDiseño(this);" data-valor="8" class="site__square">8</span>
+							<span onclick="votoDiseño(this);" data-valor="9" class="site__square">9</span>
+							<span onclick="votoDiseño(this);" data-valor="10" class="site__square">10</span>
 						</div>
 					</div>
+					<div id="js-usability" class="site__detail--main__rigth-vote row column center" style="display:none;">
+						<span>Realizar voto:</span>
+						<h3>2.- Usabilidad</h3>
+						<div class="row around">
+							<span onclick="votoUsabilidad(this);" data-valor="1" class="site__square">1</span>
+							<span onclick="votoUsabilidad(this);" data-valor="2" class="site__square">2</span>
+							<span onclick="votoUsabilidad(this);" data-valor="3" class="site__square">3</span>
+							<span onclick="votoUsabilidad(this);" data-valor="4" class="site__square">4</span>
+							<span onclick="votoUsabilidad(this);" data-valor="5" class="site__square">5</span>
+							<span onclick="votoUsabilidad(this);" data-valor="6" class="site__square">6</span>
+							<span onclick="votoUsabilidad(this);" data-valor="7" class="site__square">7</span>
+							<span onclick="votoUsabilidad(this);" data-valor="8" class="site__square">8</span>
+							<span onclick="votoUsabilidad(this);" data-valor="9" class="site__square">9</span>
+							<span onclick="votoUsabilidad(this);" data-valor="10" class="site__square">10</span>
+						</div>
+					</div>
+					<div id="js-creativity" class="site__detail--main__rigth-vote row column center" style="display:none;">
+						<span>Realizar voto:</span>
+						<h3>3.- Creatividad</h3>
+						<div class="row around">
+							<span onclick="votoCreatividad(this);" data-valor="1" class="site__square">1</span>
+							<span onclick="votoCreatividad(this);" data-valor="2" class="site__square">2</span>
+							<span onclick="votoCreatividad(this);" data-valor="3" class="site__square">3</span>
+							<span onclick="votoCreatividad(this);" data-valor="4" class="site__square">4</span>
+							<span onclick="votoCreatividad(this);" data-valor="5" class="site__square">5</span>
+							<span onclick="votoCreatividad(this);" data-valor="6" class="site__square">6</span>
+							<span onclick="votoCreatividad(this);" data-valor="7" class="site__square">7</span>
+							<span onclick="votoCreatividad(this);" data-valor="8" class="site__square">8</span>
+							<span onclick="votoCreatividad(this);" data-valor="9" class="site__square">9</span>
+							<span onclick="votoCreatividad(this);" data-valor="10" class="site__square">10</span>
+						</div>
+					</div>
+					<div id="js-content" class="site__detail--main__rigth-vote row column center" style="display:none;">
+						<span>Realizar voto:</span>
+						<h3>4.- Contenido</h3>
+						<div class="row around">
+							<span onclick="votoContenido(this);" data-valor="1" class="site__square">1</span>
+							<span onclick="votoContenido(this);" data-valor="2" class="site__square">2</span>
+							<span onclick="votoContenido(this);" data-valor="3" class="site__square">3</span>
+							<span onclick="votoContenido(this);" data-valor="4" class="site__square">4</span>
+							<span onclick="votoContenido(this);" data-valor="5" class="site__square">5</span>
+							<span onclick="votoContenido(this);" data-valor="6" class="site__square">6</span>
+							<span onclick="votoContenido(this);" data-valor="7" class="site__square">7</span>
+							<span onclick="votoContenido(this);" data-valor="8" class="site__square">8</span>
+							<span onclick="votoContenido(this);" data-valor="9" class="site__square">9</span>
+							<span onclick="votoContenido(this);" data-valor="10" class="site__square">10</span>
+						</div>
+					</div>
+
+					<div id="js-vote" class="site__detail--main__rigth-vote row column center" style="display:none;">
+						<div class="site__detail-vote__circle  row middle center">
+							<span id="js-desingVote" class="site__circle site__circle-desing">9</span>
+							<span id="js-usabilityVote" class="site__circle site__circle-usability">9</span>
+							<span id="js-creativityVote" class="site__circle site__circle-creativity">9</span>
+							<span id="js-contentVote" class="site__circle site__circle-content">9</span>
+						</div>
+						<div class="site__detail-vote__buttons row middle center">
+							<a class="site__detail-vote__button__edit" onclick="editVote();">Editar</a>
+							<a class="site__detail-vote__button__vote" onclick="doVote();">Voto</a>
+						</div>
+					</div>
+					<div id="js-doVote" class="site__detail--main__rigth-vote row column center" style="display:none;">
+						
+						<a class="site__detail-vote__button__vote-do" >Voto Realizado</a>
+						
+					</div>
+
 					<div class="site__main-section--notes row middle between">
 						<div class="site__main-section--notes--item row column">
 							<canvas class="site__main-section--notes-circle" id="myChart1" width="50" height="50"></canvas>
@@ -138,6 +205,12 @@
 	<script src="public/js/vendor/jquery.js"></script>
 	<script src="public/js/vendor/chart.js"></script>
 	<script>
+
+		var valDesign = 0;
+		var valUsability = 0;
+		var valCreativity = 0;
+		var valContent = 0;
+
 		var data1 = [
 			{
 				value: 90,
@@ -207,6 +280,51 @@
 
 		var ctx4 = document.getElementById("myChart4").getContext("2d");
 		myNewChart4 = new Chart(ct4).Doughnut(data4, options);
+
+		//Votos
+
+		function votoDiseño (argument) {
+			valDesign = parseInt(argument.dataset.valor);
+			$( '#js-desing' ).hide();
+			$( '#js-usability' ).show();
+		}
+
+		function votoUsabilidad (argument) {
+			valUsability = parseInt(argument.dataset.valor);
+			$( '#js-usability' ).hide();
+			$( '#js-creativity' ).show();	
+		}
+
+		function votoCreatividad (argument) {
+			valCreativity = parseInt(argument.dataset.valor);
+			$( '#js-creativity' ).hide();
+			$( '#js-content' ).show();		
+		}
+
+		function votoContenido (argument) {
+			valContent = parseInt(argument.dataset.valor);
+			$( '#js-content' ).hide();
+			$( '#js-vote' ).show();
+
+			$('#js-desingVote').text(valDesign);
+			$('#js-usabilityVote').text(valUsability);
+			$('#js-creativityVote').text(valCreativity);
+			$('#js-contentVote').text(valContent);
+		}
+
+		function editVote (argument) {
+			$( '#js-vote' ).hide();
+			$( '#js-desing' ).show();
+		}
+
+		function doVote (argument) {
+			valDesign = 0;
+			valUsability = 0;
+			valCreativity = 0;
+			valContent = 0;
+			$( '#js-vote' ).hide();
+			$('#js-doVote').show();
+		}
 	</script>
 </body>
 </html>
